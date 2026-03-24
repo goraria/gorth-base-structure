@@ -1,1 +1,1 @@
-export * from "@supabase/postgrest-js";
+export * from "@supabase/supabase-js";
