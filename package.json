@@ -11,6 +11,11 @@
       "import": "./.base/index.js",
       "require": "./.base/index.cjs"
     },
+    "./lib/*": {
+      "types": "./.base/lib/*.d.ts",
+      "import": "./.base/lib/*.js",
+      "require": "./.base/lib/*.cjs"
+    },
     "./common/*": {
       "types": "./.base/common/*.d.ts",
       "import": "./.base/common/*.js",
