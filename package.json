@@ -1,6 +1,6 @@
 {
   "name": "gorth-base",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "./src/index.ts",
   "exports": {
@@ -22,8 +22,8 @@
   },
   "type": "module",
   "scripts": {
-    "build": "tsup src/index.ts src/common/*/*.ts src/cores/*.ts --format esm,cjs --dts --out-dir .base --clean",
-    "dev": "tsup src/index.ts src/common/*/*.ts src/cores/*.ts --format esm,cjs --dts --out-dir .base --watch",
+    "build": "tsup src/index.ts src/common/*.ts src/cores/*.ts --format esm,cjs --dts --out-dir .base --clean",
+    "dev": "tsup src/index.ts src/common/*.ts src/cores/*.ts --format esm,cjs --dts --out-dir .base --watch",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
