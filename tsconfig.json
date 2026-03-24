@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    // "ignoreDeprecations": "6.0",
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
@@ -19,6 +18,7 @@
     "declarationMap": true,
     "sourceMap": true,
     "outDir": ".base"
+    // "ignoreDeprecations": "6.0",
   },
   "include": ["src"],
   "exclude": [
