@@ -41,6 +41,7 @@ export function createCommonServerClient<
     cookies: {
       getAll: cookies.getAll,
       setAll: (cookiesToSet) => {
+        // @ts-ignore
         cookies.setAll?.(cookiesToSet)
       },
     },

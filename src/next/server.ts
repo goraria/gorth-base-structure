@@ -1,25 +1,38 @@
-import { createCommonServerClient } from '../common/client.js'
-import type { CommonCookieMethods } from '../common/client.js'
 import type { SupabaseClientOptions } from '@supabase/supabase-js'
+import { DatabaseSchema, DefaultSchema } from "@/lib/interface"
+import { createBrowserClient, createServerClient, type CookieMethodsServer } from "@supabase/ssr";
 
-export function createNextServerClient<
+export type CommonCookieMethods = Pick<CookieMethodsServer, 'getAll' | 'setAll'>
+
+export function createServer<
   Database = any,
-  SchemaName extends string & keyof Omit<Database, '__InternalSupabase'> = 'public' extends keyof Omit<
-    Database,
-    '__InternalSupabase'
-  >
-    ? 'public'
-    : string & keyof Omit<Database, '__InternalSupabase'>,
+  SchemaName extends DatabaseSchema<Database> = DefaultSchema<Database>,
 >(
   url: string,
   publishableKey: string,
   cookies: CommonCookieMethods,
   options?: SupabaseClientOptions<SchemaName>
 ) {
-  return createCommonServerClient<Database, SchemaName>(
+  return createServerClient<Database, SchemaName>(
     url,
     publishableKey,
-    cookies,
-    options
-  )
+    {
+      ...options,
+      cookies: {
+        getAll() {
+          return cookies.getAll();
+        },
+        setAll(cookiesToSet) {
+          try {
+            // @ts-ignore
+            cookies.setAll(cookiesToSet);
+            // cookiesToSet.forEach(({ name, value, options }) =>
+            //   cookies.set(name, value, options)
+            // )
+          } catch {
+          }
+        },
+      },
+    }
+  );
 }

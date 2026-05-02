@@ -17,7 +17,7 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "outDir": ".base"
+    "outDir": "dist"
     // "ignoreDeprecations": "6.0",
   },
   "include": ["src"],
