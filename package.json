@@ -1,6 +1,6 @@
 {
   "name": "gorth-base",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -70,7 +70,7 @@
   ],
   "type": "module",
   "scripts": {
-    "build": "tsup src/index.ts src/common/*.ts src/cores/*.ts src/lib/*.ts --format esm,cjs --dts --out-dir dist --clean",
+    "build": "tsup --minify",
     "prepack": "pnpm build",
     "dev": "tsup src/index.ts src/common/*.ts src/cores/*.ts src/lib/*.ts --format esm,cjs --dts --out-dir dist --watch",
     "lint": "eslint",
@@ -87,17 +87,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@supabase/postgrest-js": "^2.105.1",
-    "@supabase/ssr": "^0.10.2",
-    "@supabase/supabase-js": "^2.105.1",
-    "axios": "^1.15.2",
+    "@supabase/postgrest-js": "^2.105.4",
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.105.4",
+    "axios": "^1.16.0",
     "picocolors": "^1.1.1",
-    "svix": "^1.92.2",
+    "svix": "^1.93.0",
     "uuid": "^14.0.0",
-    "zod": "^4.4.2"
+    "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@types/node": "^25.6.0",
+    "@types/node": "^25.6.2",
     "eslint": "^9.39.4",
     "prettier": "^3.8.3",
     "tsup": "^8.5.1",
