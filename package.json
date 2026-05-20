@@ -1,6 +1,6 @@
 {
   "name": "gorth-base",
-  "version": "0.1.9",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -40,6 +40,21 @@
       "types": "./dist/cores/supabase-ssr.d.ts",
       "import": "./dist/cores/supabase-ssr.js",
       "require": "./dist/cores/supabase-ssr.cjs"
+    },
+    "./cores/graphql": {
+      "types": "./dist/cores/graphql.d.ts",
+      "import": "./dist/cores/graphql.js",
+      "require": "./dist/cores/graphql.cjs"
+    },
+    "./cores/graphql-request": {
+      "types": "./dist/cores/graphql-request.d.ts",
+      "import": "./dist/cores/graphql-request.js",
+      "require": "./dist/cores/graphql-request.cjs"
+    },
+    "./cores/graphql-tag": {
+      "types": "./dist/cores/graphql-tag.d.ts",
+      "import": "./dist/cores/graphql-tag.js",
+      "require": "./dist/cores/graphql-tag.cjs"
     },
     "./cores/axios": {
       "types": "./dist/cores/axios.d.ts",
@@ -87,17 +102,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@supabase/postgrest-js": "^2.105.4",
+    "@supabase/postgrest-js": "^2.106.1",
     "@supabase/ssr": "^0.10.3",
-    "@supabase/supabase-js": "^2.105.4",
-    "axios": "^1.16.0",
+    "@supabase/supabase-js": "^2.106.1",
+    "axios": "^1.16.1",
+    "graphql": "^16.14.0",
+    "graphql-request": "^7.4.0",
+    "graphql-tag": "^2.12.6",
     "picocolors": "^1.1.1",
-    "svix": "^1.93.0",
+    "svix": "^1.94.0",
     "uuid": "^14.0.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@types/node": "^25.6.2",
+    "@types/node": "^25.9.1",
     "eslint": "^9.39.4",
     "prettier": "^3.8.3",
     "tsup": "^8.5.1",
