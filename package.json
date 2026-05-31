@@ -109,6 +109,7 @@
     "graphql": "^16.14.0",
     "graphql-request": "^7.4.0",
     "graphql-tag": "^2.12.6",
+    "jose": "^6.2.3",
     "picocolors": "^1.1.1",
     "svix": "^1.95.1",
     "uuid": "^14.0.0",
