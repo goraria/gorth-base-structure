@@ -1,6 +1,6 @@
 {
   "name": "gorth-base-structure",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -25,6 +25,21 @@
       "types": "./dist/cores/*.d.ts",
       "import": "./dist/cores/*.js",
       "require": "./dist/cores/*.cjs"
+    },
+    "./cores/auth": {
+      "types": "./dist/cores/auth.d.ts",
+      "import": "./dist/cores/auth.js",
+      "require": "./dist/cores/auth.cjs"
+    },
+    "./cores/auth-client": {
+      "types": "./dist/cores/auth-client.d.ts",
+      "import": "./dist/cores/auth-client.js",
+      "require": "./dist/cores/auth-client.cjs"
+    },
+    "./cores/auth-server": {
+      "types": "./dist/cores/auth-server.d.ts",
+      "import": "./dist/cores/auth-server.js",
+      "require": "./dist/cores/auth-server.cjs"
     },
     "./cores/supabase-js": {
       "types": "./dist/cores/supabase-js.d.ts",
