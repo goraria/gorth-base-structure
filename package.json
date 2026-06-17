@@ -76,6 +76,11 @@
       "import": "./dist/cores/axios.js",
       "require": "./dist/cores/axios.cjs"
     },
+    "./cores/pg": {
+      "types": "./dist/cores/pg.d.ts",
+      "import": "./dist/cores/pg.js",
+      "require": "./dist/cores/pg.cjs"
+    },
     "./cores/zod": {
       "types": "./dist/cores/zod.d.ts",
       "import": "./dist/cores/zod.js",
