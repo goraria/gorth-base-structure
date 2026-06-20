@@ -11,12 +11,8 @@ export default defineConfig({
   splitting: true,
   entry: [
     "src/index.ts",
-    "src/components/*/*.ts",
-    "src/common/*.ts",
     "src/lib/*.ts",
     "src/cores/*.ts",
-    "src/express/*.ts",
-    "src/next/*.ts",
   ],
   format: ["esm"],
   sourcemap: false,
