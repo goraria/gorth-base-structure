@@ -41,6 +41,10 @@
       "import": "./dist/cores/auth-server.js",
       "require": "./dist/cores/auth-server.cjs"
     },
+    "./cores/auth-infra": {
+      "types": "./dist/cores/auth-infra.d.ts",
+      "import": "./dist/cores/auth-infra.js"
+    },
     "./cores/supabase-js": {
       "types": "./dist/cores/supabase-js.d.ts",
       "import": "./dist/cores/supabase-js.js",
@@ -122,6 +126,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@better-auth/infra": "^0.2.14",
     "@supabase/postgrest-js": "^2.108.2",
     "@supabase/ssr": "^0.12.0",
     "@supabase/supabase-js": "^2.108.2",
