@@ -1,7 +1,7 @@
 export * from "better-auth/plugins"
 export * from "better-auth/plugins/admin"
 export * from "better-auth/plugins/access"
-export * from "better-auth/plugins/admin/access"
+// export * from "better-auth/plugins/admin/access"
 export * from "better-auth/plugins/anonymous"
 export * from "better-auth/plugins/bearer"
 export * from "better-auth/plugins/custom-session"
