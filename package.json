@@ -6,37 +6,35 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    "exports": {
-      ".": {
-        "types": "./dist/index.d.ts",
-        "import": "./dist/index.js",
-        "require": "./dist/index.cjs"
-      },
-      "./lib/*": {
-        "types": "./dist/lib/*.d.ts",
-        "import": "./dist/lib/*.js",
-        "require": "./dist/lib/*.cjs"
-      },
-      "./common/*": {
-        "types": "./dist/common/*.d.ts",
-        "import": "./dist/common/*.js",
-        "require": "./dist/common/*.cjs"
-      },
-      "./cores/*": {
-        "types": "./dist/cores/*.d.ts",
-        "import": "./dist/cores/*.js",
-        "require": "./dist/cores/*.cjs"
-      },
-      "./cores/*/*": {
-        "types": "./dist/cores/*/*.d.ts",
-        "import": "./dist/cores/*/*.js",
-        "require": "./dist/cores/*/*.cjs"
-      },
-      "./cores/*/*/*": {
-        "types": "./dist/cores/*/*/*.d.ts",
-        "import": "./dist/cores/*/*/*.js",
-        "require": "./dist/cores/*/*/*.cjs"
-      }
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./lib/*": {
+      "types": "./dist/lib/*.d.ts",
+      "import": "./dist/lib/*.js",
+      "require": "./dist/lib/*.cjs"
+    },
+    "./common/*": {
+      "types": "./dist/common/*.d.ts",
+      "import": "./dist/common/*.js",
+      "require": "./dist/common/*.cjs"
+    },
+    "./cores/*": {
+      "types": "./dist/cores/*.d.ts",
+      "import": "./dist/cores/*.js",
+      "require": "./dist/cores/*.cjs"
+    },
+    "./cores/*/*": {
+      "types": "./dist/cores/*/*.d.ts",
+      "import": "./dist/cores/*/*.js",
+      "require": "./dist/cores/*/*.cjs"
+    },
+    "./cores/*/*/*": {
+      "types": "./dist/cores/*/*/*.d.ts",
+      "import": "./dist/cores/*/*/*.js",
+      "require": "./dist/cores/*/*/*.cjs"
     }
   },
   "typesVersions": {
