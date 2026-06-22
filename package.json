@@ -42,6 +42,12 @@
       "cores/*": [
         "dist/cores/*.d.ts"
       ],
+      "cores/*/*": [
+        "dist/cores/*/*.d.ts"
+      ],
+      "cores/*/*/*": [
+        "dist/cores/*/*/*.d.ts"
+      ],
       "common/*": [
         "dist/common/*.d.ts"
       ],
