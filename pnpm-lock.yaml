@@ -14,6 +14,9 @@ importers:
       '@supabase/postgrest-js':
         specifier: ^2.108.2
         version: 2.108.2
+      '@supabase/server':
+        specifier: ^1.1.0
+        version: 1.1.0(@supabase/supabase-js@2.108.2)
       '@supabase/ssr':
         specifier: ^0.12.0
         version: 0.12.0(@supabase/supabase-js@2.108.2)
@@ -596,6 +599,22 @@ packages:
   '@supabase/realtime-js@2.108.2':
     resolution: {integrity: sha512-aAGxCSUemZvQIibnCdvNvgaKib28I4rfrNjKbQ9cG1uBLwUsI7hVpGXgEbypCCDhLjQlDTAiJlu7rgljYUT73g==}
     engines: {node: '>=20.0.0'}
+
+  '@supabase/server@1.1.0':
+    resolution: {integrity: sha512-vw71/xLMUMcAu5EELSy74MeSxQT3iTHk+uWA7PyEELtgFVKn1uJpeK4KUBrkLDqt0YTgbgvqSD4jxhKG4UrhAQ==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@supabase/supabase-js': ^2.0.0
+      elysia: ^1.4.0
+      h3: ^2.0.0
+      hono: ^4.0.0
+    peerDependenciesMeta:
+      elysia:
+        optional: true
+      h3:
+        optional: true
+      hono:
+        optional: true
 
   '@supabase/ssr@0.12.0':
     resolution: {integrity: sha512-d9XV5XzJvzzZbeAIM7fWTCUYxQJZ2Ru6ny3dJHmHGp/LIrJ+o9FpD7N9Rf/UhhWEvHXSoDe8SI32Z2ouOdMjBg==}
@@ -1823,6 +1842,11 @@ snapshots:
     dependencies:
       '@supabase/phoenix': 0.4.2
       tslib: 2.8.1
+
+  '@supabase/server@1.1.0(@supabase/supabase-js@2.108.2)':
+    dependencies:
+      '@supabase/supabase-js': 2.108.2
+      jose: 6.2.3
 
   '@supabase/ssr@0.12.0(@supabase/supabase-js@2.108.2)':
     dependencies:

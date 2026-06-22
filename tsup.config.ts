@@ -12,7 +12,7 @@ export default defineConfig({
   entry: [
     "src/index.ts",
     "src/lib/*.ts",
-    "src/cores/*.ts",
+    "src/cores/**/*.ts",
   ],
   format: ["esm"],
   sourcemap: false,
