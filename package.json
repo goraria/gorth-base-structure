@@ -80,6 +80,11 @@
       "import": "./dist/cores/axios.js",
       "require": "./dist/cores/axios.cjs"
     },
+    "./cores/postgres": {
+      "types": "./dist/cores/postgres.d.ts",
+      "import": "./dist/cores/postgres.js",
+      "require": "./dist/cores/postgres.cjs"
+    },
     "./cores/pg": {
       "types": "./dist/cores/pg.d.ts",
       "import": "./dist/cores/pg.js",
