@@ -1,6 +1,6 @@
 {
   "name": "gorth-base-structure",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -78,13 +78,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@better-auth/infra": "^0.2.14",
+    "@better-auth/infra": "^0.3.2",
     "@supabase/postgrest-js": "^2.108.2",
-    "@supabase/server": "^1.1.0",
+    "@supabase/server": "^1.2.0",
     "@supabase/ssr": "^0.12.0",
     "@supabase/supabase-js": "^2.108.2",
-    "axios": "^1.18.0",
-    "better-auth": "^1.6.19",
+    "axios": "^1.18.1",
+    "better-auth": "^1.6.20",
     "graphql": "^17.0.1",
     "graphql-request": "^7.4.0",
     "graphql-tag": "^2.12.7",
@@ -92,7 +92,7 @@
     "pg": "^8.22.0",
     "postgres": "^3.4.9",
     "svix": "^1.96.0",
-    "uuid": "^14.0.0",
+    "uuid": "^14.0.1",
     "zod": "^4.4.3"
   },
   "devDependencies": {
@@ -103,5 +103,5 @@
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   },
-  "packageManager": "pnpm@10.34.3"
+  "packageManager": "pnpm@10.33.4"
 }
