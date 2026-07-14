@@ -1,4 +1,2 @@
-import zod from "zod";
-
-// export * from "zod";
-export default zod
+export * from "zod";
+export { default } from "zod";
